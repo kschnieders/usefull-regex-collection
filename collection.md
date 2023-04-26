@@ -11,5 +11,5 @@
 + The string contains only letters (upper and lower case), numbers and underscores.
 + The string is case sensitive.
 ```
-/^[a-zA-Z0-9_]{4,25}$/
+^[a-zA-Z0-9_]{4,25}$
 ```
