@@ -14,14 +14,14 @@
 ^[a-zA-Z0-9_]{4,25}$
 ```
 ## To validate a YouTube url
-+ Prüft, ob eine Zeichenkette eine gültige YouTube-URL enthält.
-+ Beginnt am Anfang des Strings.
-+ Optional wird geprüft, ob die URL mit "http://" oder "https://" beginnt.
-+ Optional wird geprüft, ob "www." in der URL vorkommt.
-+ Sucht nach "youtube.com/watch?v=" oder "youtube.com/embed/" oder "youtu.be/" im String.
-+ Wenn einer dieser Fälle zutrifft, erwartet die Regex den YouTube Video ID Code.
-+ Der YouTube Video ID Code muss genau 11 Buchstaben, Zahlen, Unterstriche oder Bindestriche enthalten.
-+ Sobald alle diese Bedingungen erfüllt sind, wird die URL als gültig erkannt.
++ Checks whether a string contains a valid YouTube URL.
++ Starts at the beginning of the string.
++ Optionally checks if the URL starts with "http://" or "https://".
++ Optionally checks if "www." occurs in the URL.
++ Searches for "youtube.com/watch?v=" or "youtube.com/embed/" or "youtu.be/" in the string.
++ If one of these cases is true, the regex expects the YouTube video ID code.
++ The YouTube video ID code must contain exactly 11 letters, numbers, underscores, or hyphens.
++ Once all these conditions are met, the URL is recognized as valid.
 ```
 ^(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/(?:watch\?v=|embed\/)|youtu\.be\/)([a-zA-Z0-9_-]{11})$
 ```
